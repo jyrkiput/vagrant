@@ -49,6 +49,11 @@ module VagrantPlugins
       # @return [Hash]
       attr_accessor :host_vm_build_dir_options
 
+      # Links for this container, for example (["db:db"])
+      #
+      # @return [Array<String>]
+      attr_accessor :links
+
       # The name for the container. This must be unique for all containers
       # on the proxy machine if it is made.
       #
