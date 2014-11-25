@@ -40,6 +40,9 @@ General settings:
     another container in the same Vagrantfile, make sure you call
     `vagrant up` with the `--no-parallel` flag.
 
+  * `links` (array of strings) - Link this container to another
+    by name. Example: `["server:server"]`.
+
   * `force_host_vm` (boolean) - If true, then a host VM will be spun up
     even if the computer running Vagrant supports Linux containers. This
     is useful to enforce a consistent environment to run Docker.
